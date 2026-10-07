@@ -1,0 +1,75 @@
+# Symbols no library, runtime or megatouch-host provides (2026-10-07)
+# megatouch-host loads the game with RTLD_NOW, so each of these must be defined
+# (usually in src/host/loader_services.cpp) before the game will start.
+# symbol | needed by
+FlipBitmapVert | chainz2.so
+FlipBitmapVert | libmerit3d.so
+FileExists(char const*) | chainz2.so
+FileExists(char const*) | libmerit3d.so
+Debug_Flag_Set(char const*, char const*) | chainz2.so
+DisableTouchScreen() | chainz2.so
+DoRegularProcessing() | libmerit3d.so
+debug_check_address(void*) | libmeritbasegame.so
+Heartbeat_WaitForAll(unsigned long, bool) | libmeritbasegame.so
+megastart(char const*, app_common::args_t*) | chainz2.so
+NetGlobals::NetSpriteUnRegister(NetSprite*, unsigned char) | libmeritbasegame.so
+TextSystem::GetTextSize(char const*, int, bool) | chainz2.so
+TextSystem::ConvertToMarkup(char const*) | chainz2.so
+TextSystem::GetSpriteChannels(char const*, unsigned char**, unsigned char**, int, int, bool, bool, int, float) | chainz2.so
+TextSystem::GetSpriteChannels(char const*, unsigned char**, unsigned char**, int, int, bool, bool, int, float) | libmerit3d.so
+TextSystem::SetTextDescription(TextDesc const&) | chainz2.so
+TextSystem::SetTextDescription(TextDesc const&) | libmerit3d.so
+Tournamaxx::Instance() | chainz2.so
+CoinJamManager::RegisterCallback(void (*)(bool)) | chainz2.so
+CoinJamManager::UnregisterCallback(void (*)(bool)) | chainz2.so
+CoinJamManager::Instance() | chainz2.so
+MyMeritManager::GetGameLevel(xml_gameinfo::GameIds) | chainz2.so
+MyMeritManager::GetGameLevel(xml_gameinfo::GameIds) | libmeritbasegame.so
+MyMeritManager::SetGameLevel(xml_gameinfo::GameIds, int) | chainz2.so
+MyMeritManager::SetGameLevel(xml_gameinfo::GameIds, int) | libmeritbasegame.so
+MyMeritManager::Instance() | chainz2.so
+MyMeritManager::Instance() | libmeritbasegame.so
+ExtendedCrashInfo::ExtendedCrashInfo() | libmeritbasegame.so
+ExtendedCrashInfo::~ExtendedCrashInfo() | libmeritbasegame.so
+USBIO::ReadJoystick(short*, short*, unsigned char*, short, short, unsigned char*) | chainz2.so
+USBIO::JoystickFound() | chainz2.so
+USBIO::JoystickFound() | libmeritbasegame.so
+USBIO::Instance() | chainz2.so
+Colour::black | chainz2.so
+Colour::black | libmerit3d.so
+Colour::white | chainz2.so
+Colour::white | libmerit3d.so
+Locale::LanguageManager::IndexOf(Locale::Languages) | chainz2.so
+Locale::LanguageManager::IndexOf(Locale::Languages) | libmerit3d.so
+Merit3d::RenderToTexture::UpdateTexture(unsigned char*) | libmerit3d.so
+Merit3d::RenderToTexture::UpdateDeltaTextureFull(unsigned short*, unsigned char*, unsigned short) | libmerit3d.so
+Merit3d::RenderToTexture::UpdateDeltaTextureDirty(unsigned short*, unsigned short) | libmerit3d.so
+Merit3d::RenderToTexture::Create(unsigned int, unsigned int, unsigned int) | libmerit3d.so
+Merit3d::RenderToTexture::Destroy() | libmerit3d.so
+Merit3d::RenderToTexture::RenderToTexture() | libmerit3d.so
+Merit3d::RenderToTexture::~RenderToTexture() | libmerit3d.so
+Merit3d::VideoObjectData::FirstFrame() | libmerit3d.so
+Merit3d::VideoObjectData::isVideoLoaded() | libmerit3d.so
+Merit3d::VideoObjectData::Load(char const*, bool) | libmerit3d.so
+Merit3d::VideoObjectData::Play() | libmerit3d.so
+Merit3d::VideoObjectData::Stop() | libmerit3d.so
+Merit3d::VideoObjectData::Pause() | libmerit3d.so
+Merit3d::VideoObjectData::Update(float) | libmerit3d.so
+Merit3d::VideoObjectData::Restart(int) | libmerit3d.so
+Merit3d::VideoObjectData::Shutdown() | libmerit3d.so
+Merit3d::VideoObjectData::VideoObjectData() | libmerit3d.so
+TextDesc::SetFontName(char const*) | chainz2.so
+TextDesc::SetFontName(char const*) | libmerit3d.so
+TextUtils::ConvertToMarkup(char const*) | libmerit3d.so
+MyMeritManager::PlayerLoaded() const | chainz2.so
+MyMeritManager::PlayerLoaded() const | libmeritbasegame.so
+MyMeritManager::Name() const | chainz2.so
+MyMeritManager::Name() const | libmeritbasegame.so
+typeinfo for ExtendedCrashInfo | libmeritbasegame.so
+__aglXGetProcAddressARB | libmerit3d.so
+allegro_gl_flip | chainz2.so
+allegro_gl_flip | libmerit3d.so
+mouse_button_presses_cached | chainz2.so
+uisdigit | chainz2.so
+ustricmp | chainz2.so
+uszprintf | chainz2.so
